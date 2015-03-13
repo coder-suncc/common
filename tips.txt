@@ -1,0 +1,19 @@
+1.linux下vi乱码
+	cd ~
+	vi .vimrc
+	set fileencodings=utf-8,gbk
+	set termencoding=utf-8
+	set encoding=utf-8
+
+2.nginx的location定位根目录
+	location = / {
+	  rewrite / /index.html break;
+	  root /usr/share/nginx/html;
+	  index index.html;
+	}
+3.openssl生成证书
+	openssl genrsa -out server.key 2048 
+	openssl req -new -key server.key -out certreq.csr
+	openssl x509 -req -days 700 -in certreq.csr -signkey server.key -out server.cert
+4.让进程在后台可靠运行的几种方法
+	http://www.ibm.com/developerworks/cn/linux/l-cn-nohup/
