@@ -20,3 +20,4 @@
         setsid 方法很有用
 5.根据inode删除文件
 	 find . -inum 782263 -exec rm -i {} \;
+6.http://blog.csdn.net/qingye_love/article/details/14163511
