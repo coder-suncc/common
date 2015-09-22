@@ -23,3 +23,8 @@
 6.http://blog.csdn.net/qingye_love/article/details/14163511
 7.Android开发视频
 http://www.mobiletrain.org/about/news/android_video2.html
+8.文件或目录编码转换
+http://demi-panda.com/2013/01/12/linux-encoding-convert/
+
+$ find default -type d -exec mkdir -p utf/{} \;
+$ find default -type f -exec iconv -f GBK -t UTF-8 {} -o utf/{} \;
