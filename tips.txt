@@ -28,3 +28,4 @@ http://demi-panda.com/2013/01/12/linux-encoding-convert/
 
 $ find default -type d -exec mkdir -p utf/{} \;
 $ find default -type f -exec iconv -f GBK -t UTF-8 {} -o utf/{} \;
+9.加盐hash保存密码的正确方式http://drops.wooyun.org/papers/1066
