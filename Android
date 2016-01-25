@@ -1,0 +1,5 @@
+1.Android内部类混淆问题
+-keepattributes Exceptions,InnerClasses,...
+-keep class com.xxx.A$* {
+    *;
+}
